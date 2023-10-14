@@ -14,6 +14,19 @@ body {
 }
 
 
+.welcome-message {
+    position:fixed;
+    max-width: 600px;
+    right: 60px;
+    top: 5px;
+    color: white;
+    background-color: #0082fcaf;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .calculator {
     position: relative;
     width: 340px;
