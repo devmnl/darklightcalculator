@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #feffff;
+}
+
+
+.calculator {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #e4e6e9;
+    box-shadow:
+      15px 15px 20px rgba(0, 0, 0, 0.25),
+      -15px -15px 20px rgba(241, 236, 236, 0.1);
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+    background: #ffffff;
+    box-shadow: inset 15px 15px 20px rgba(85, 84, 84, 0.5),
+          inset -15px -15px 20px rgba(112, 112, 112, 0.1);
+}
+
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #212222;
+}
+
+.calculator .buttons span#clear  {
+    grid-column: span 2;
+    background-color: #f44336;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#equal {
+    grid-row: span 2;
+    background-color: #2657fa;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+
+.calculator .buttons span#plus {
+    grid-row: span 2;
+    background-color: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+               -5px -5px 10px #fff,
+         inset 5px 5px 10px rgba(0 , 0, 0, 0.1);
+}
+
+.toggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2e2c2c;
+    cursor: pointer;
+    border: 2px solid #4d4e50;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+       -5px -5px 10px #524f4ff3;
+}
+
+.dark .toggleBtn {
+    background: #fff; /* Cor de fundo no modo escuro */
+    border: 1px solid #555; /* Borda no modo escuro */
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.1),
+       -5px -5px 10px #ebeef060; /* Sombra no modo escuro */
+}
+
+body:not(.dark) .toggleBtn  {
+    border: 2px solid #0c0c0c; /* Borda no modo claro */
+    box-shadow: 
+        5px 5px 10px rgba(240, 237, 237, 0.4),
+       -5px -5px 10px #ffffff; /* Sombra no modo claro */
+}
+
+.dark {
+    background: #282c2f;
+}
+
+.dark .calculator {
+    background: #33393e;
+    box-shadow:
+      15px 15px 20px rgba(0 , 0, 0, 0.25),
+      -15px -15px 20px rgba(255 , 255, 255, 0.1);
+}
+
+.dark .calculator .buttons #value {
+    background: #33393e;
+    color: #eee;
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5),
+          inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+
+
+.dark .calculator .buttons span {
+    background: #33393e;
+    color: #eee;
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.25),
+          inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark .calculator .buttons span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+         inset -5px -5px 10px rgb(255, 255, 255, 0.1);
+}
+
+
+.dark .calculator .buttons span#clear,
+.dark .calculator .buttons span#plus,
+.dark .calculator .buttons span#equal {
+    border: solid 2px #333;
+}
+
+.dark .calculator .buttons span#clear:active,
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#equal:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+      font-size: 20px;
+    }
+  }
+
+/* Estilo para o rodapé */
+footer {
+    background-color:#313846 ;
+    padding: 10px;
+    text-align: center;
+    color: #e7dbdb;
+    position: fixed; /* Fixa o rodapé na parte inferior da janela */
+    bottom: 0; /* Cola o rodapé no rodapé da janela */
+    left: 0;
+    right: 0;
+
+  }
+
+  footer a {
+    padding: 10px;
+  }
+  
+  /* Estilize o parágrafo dentro do rodapé, se necessário */
+  footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+
+
