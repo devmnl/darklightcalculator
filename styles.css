@@ -113,8 +113,8 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #2e2c2c;
     cursor: pointer;
