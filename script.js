@@ -49,3 +49,15 @@ document.addEventListener("keydown", function (event) {
     }
   });
   //-----------------------------------------------------------------
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Exibir a mensagem de boas-vindas quando a página é carregada
+    const welcomeMessage = document.getElementById("welcome-message");
+    welcomeMessage.style.display = "block";
+
+    // Quando o botão de alteração de tema é clicado, ocultar a mensagem
+    const toggleBtn = document.querySelector(".toggleBtn");
+    toggleBtn.addEventListener("click", function() {
+        welcomeMessage.style.display = "none";
+    });
+});
