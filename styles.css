@@ -17,8 +17,8 @@ body {
 .welcome-message {
     position:fixed;
     max-width: 600px;
-    right: 60px;
-    top: 5px;
+    right: 70px;
+    top: 7px;
     color: white;
     background-color: #0082fcaf;
     font-size: 20px;
