@@ -32,7 +32,7 @@ Esta calculadora é uma aplicação web simples construída com tecnologias da w
 
 ## Capturas de Tela
 
-Adicione aqui algumas imagens da calculadora em funcionamento, tanto no modo claro quanto no modo escuro.
+![Modo claro](images/lightimg.jpeg) ![Modo Escuro](images/darkimg.jpeg)
 
 ## Tecnologias Utilizadas
 
