@@ -16,8 +16,7 @@
   - [Instalação](#instalação)
 - [Uso](#uso)
 - [Contribuindo](#contribuindo)
-- [Licença](#licença)
-- [Contato](#contato)
+
 
 ## Visão Geral
 
